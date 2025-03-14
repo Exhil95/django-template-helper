@@ -1,3 +1,10 @@
+## 📥 Install Django Template Helper  
+[![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/Exhil95.django-template-helper)](https://marketplace.visualstudio.com/items?itemName=Exhil95.django-template-helper)
+
+🔗 **[Download from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Exhil95.django-template-helper)**
+
+
+
 # Django Template Helper - VS Code Extension
 
 Django Template Helper is a Visual Studio Code extension that improves syntax highlighting, auto-closing tags, and Emmet support for Django Templates. This extension ensures a smoother development experience when working with `.html` files in Django projects.
