@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "publisher": "Exhil95",
     "engines": {
-        "vscode": "^1.80.0"
+        "vscode": "^1.98.0"
     },
     "categories": [
         "Other"
@@ -13,7 +13,7 @@
     "activationEvents": [
         "onCommand:django-template-helper.applySettings"
     ],
-    "main": "./src/extension.ts",
+    "main": "./dist/extension.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/Exhil95/django-template-helper"

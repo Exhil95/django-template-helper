@@ -47,11 +47,6 @@ exports.deactivate = deactivate;
 const vscode = __importStar(require("vscode"));
 function activate(context) {
     let disposable = vscode.commands.registerCommand('django-template-helper.applySettings', () => __awaiter(this, void 0, void 0, function* () {
-        const config = vscode.workspace.getConfiguration();
-        yield config.update("files.associations", { "*.html": "django-html" }, vscode.ConfigurationTarget.Global);
-        yield config.update("emmet.includeLanguages", { "django-html": "html" }, vscode.ConfigurationTarget.Global);
-        yield config.update("auto-close-tag.activationOnLanguage", ["django-html"], vscode.ConfigurationTarget.Global);
-        yield config.update("editor.defaultFormatter", "vscode.html-language-features", vscode.ConfigurationTarget.Global);
         vscode.window.showInformationMessage('Django Template settings applied successfully! ✅');
     }));
     context.subscriptions.push(disposable);
