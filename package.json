@@ -3,13 +3,21 @@
     "displayName": "Django Template Helper",
     "description": "Fixes syntax highlighting, auto-closing tags, and Emmet for Django Templates in VS Code.",
     "version": "1.0.0",
-    "publisher": "YourName",
+    "publisher": "Exhil95",
     "engines": {
         "vscode": "^1.80.0"
     },
-    "categories": ["Other"],
-    "activationEvents": ["onCommand:django-template-helper.applySettings"],
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:django-template-helper.applySettings"
+    ],
     "main": "./src/extension.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Exhil95/django-template-helper"
+    },
     "contributes": {
         "commands": [
             {
@@ -17,5 +25,13 @@
                 "title": "Django Template Fix – Apply Recommended Settings"
             }
         ]
+    },
+    "scripts": {
+        "compile": "tsc",
+        "package": "vsce package"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.98.0",
+        "typescript": "^5.8.2"
     }
 }
